@@ -4,6 +4,9 @@ const lastCharacter = require("../fundamentals-3.2");
 // Write 3 more expect functions to test the function you just wrote.
 test("Exercise 2", () => {
   expect(lastCharacter("max")).toBe("x");
+  expect(lastCharacter("passs")).toBe("s");
+  expect(lastCharacter("wazzupmydudes")).toBe("s");
+  expect(lastCharacter("max  ")).toBe(" ");
   expect(lastCharacter(23232)).toBe(undefined);
   // add more tests here...
 });

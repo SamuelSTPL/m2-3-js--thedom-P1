@@ -8,8 +8,14 @@
 // - If the array contains any values that are not a number, the function should return undefined.
 
 function sum(arr) {
-  // Your code here
-}
+    if (arr.isArray) {
+      return undefined;
+    } else {
+      return arr.reduce(function (a, b){
+        return a + b;
+      }, 0)
+  }
+  }
 
 // Part 2 - Test
 // --------------

@@ -12,7 +12,19 @@
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
 function repeat(arr) {
-  // Your code here
+  let str= ''
+  if (arr.constructor !== Array|| arr.length !== 2){
+    return undefined;
+  } else {
+    if (arr[1] === 0){
+      return str;
+    } else {
+      for (i = 0; i < arr[1]; i++){
+        str += arr[0];
+      }
+      return str;
+    }
+  }
 }
 
 // Part 2 - Test

@@ -4,6 +4,9 @@ const sum = require("../fundamentals-3.3");
 // Write 3 more expect functions to test the function you just wrote.
 test("Exercise 3", () => {
   expect(sum([3, 4])).toBe(7);
+  expect(sum([3, 663])).toBe(666);
+  expect(sum([3, 66])).toBe(69);
+  expect(sum([3, 417])).toBe(420);
   // add more tests here...
 });
 
